@@ -1,0 +1,554 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Adatkezelési tájékoztató | Naperőmű Üzemeltetés</title>
+
+    <meta
+        name="description"
+        content="A Naperőmű Üzemeltetés weboldalához kapcsolódó adatkezelési tájékoztató."
+    >
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="home.css">
+
+    <style>
+        .legal-page {
+            min-height: 70vh;
+            padding: 150px 0 90px;
+        }
+
+        .legal-content {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        .legal-eyebrow {
+            display: inline-block;
+            margin-bottom: 18px;
+            color: #b8a06a;
+            font-size: 12px;
+            font-weight: 700;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+        }
+
+        .legal-content h1 {
+            margin-bottom: 18px;
+            font-size: clamp(34px, 5vw, 54px);
+            line-height: 1.15;
+        }
+
+        .legal-intro {
+            margin-bottom: 24px;
+            color: #aeb6c2;
+            font-size: 17px;
+            line-height: 1.8;
+        }
+
+        .legal-updated {
+            margin-bottom: 38px;
+            color: #aeb6c2;
+            font-size: 13px;
+        }
+
+        .legal-card {
+            margin-bottom: 22px;
+            padding: 28px;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 16px;
+            background: rgba(255, 255, 255, 0.035);
+        }
+
+        .legal-card h2 {
+            margin-bottom: 16px;
+            font-size: 21px;
+            line-height: 1.4;
+        }
+
+        .legal-card h3 {
+            margin: 20px 0 10px;
+            font-size: 17px;
+        }
+
+        .legal-card p,
+        .legal-card li {
+            color: #c4cad3;
+            font-size: 15px;
+            line-height: 1.8;
+            overflow-wrap: anywhere;
+        }
+
+        .legal-card p {
+            margin: 10px 0;
+        }
+
+        .legal-card ul {
+            padding-left: 22px;
+            margin: 12px 0;
+        }
+
+        .legal-card li {
+            margin-bottom: 8px;
+        }
+
+        .legal-card strong {
+            color: #fff;
+        }
+
+        .legal-card a {
+            color: #d5c28f;
+            overflow-wrap: anywhere;
+        }
+
+        .legal-notice {
+            margin-top: 28px;
+            padding: 20px;
+            border-left: 3px solid #b8a06a;
+            border-radius: 0 10px 10px 0;
+            background: rgba(184, 160, 106, 0.08);
+            color: #c4cad3;
+            font-size: 14px;
+            line-height: 1.8;
+        }
+
+        .legal-back {
+            display: inline-flex;
+            margin-top: 28px;
+            color: #fff;
+            text-decoration: none;
+            transition: color 0.2s ease;
+        }
+
+        .legal-back:hover {
+            color: #b8a06a;
+        }
+
+        @media (max-width: 600px) {
+            .legal-page {
+                padding: 120px 0 60px;
+            }
+
+            .legal-card {
+                padding: 21px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- FEJLÉC -->
+    <header class="navbar">
+        <div class="nav-container">
+
+            <a href="index.html" class="logo">
+                <img
+                    src="images/logo.png"
+                    alt="Naperőmű Üzemeltetés"
+                >
+
+                <div class="logo-text">
+                    <span>NAPERŐMŰ</span>
+                    <strong>ÜZEMELTETÉS</strong>
+                </div>
+            </a>
+
+            <nav class="nav-menu">
+                <a href="index.html#rolunk">Rólunk</a>
+                <a href="index.html#szolgaltatasok">Szolgáltatások</a>
+                <a href="index.html#referenciak">Referenciák</a>
+                <a href="index.html#kapcsolat" class="nav-button">
+                    Kapcsolat
+                </a>
+            </nav>
+
+            <button
+                class="menu-toggle"
+                id="menuToggle"
+                aria-label="Menü megnyitása"
+                aria-expanded="false"
+            >
+                ☰
+            </button>
+
+        </div>
+    </header>
+
+    <main>
+        <section class="legal-page">
+            <div class="section-container">
+                <div class="legal-content">
+
+                    <span class="legal-eyebrow">
+                        Jogi információk
+                    </span>
+
+                    <h1>Adatkezelési tájékoztató</h1>
+
+                    <p class="legal-intro">
+                        Jelen tájékoztató célja, hogy közérthetően
+                        bemutassa, milyen személyes adatok kezelése
+                        merülhet fel a Naperőmű Üzemeltetés weboldalának
+                        használata és az üzemeltetővel történő
+                        kapcsolatfelvétel során.
+                    </p>
+
+                    <p class="legal-updated">
+                        Hatálybalépés dátuma: [A véglegesítés dátuma]
+                    </p>
+
+                    <!-- 1. ADATKEZELŐ -->
+                    <section class="legal-card">
+                        <h2>1. Az adatkezelő adatai</h2>
+
+                        <p>
+                            <strong>Név:</strong>
+                            Csordás József egyéni vállalkozó
+                        </p>
+
+                        <p>
+                            <strong>Székhely:</strong>
+                            1044 Budapest, Kisfaludy utca 13.
+                        </p>
+
+                        <p>
+                            <strong>Adószám:</strong>
+                            59374945-2-41
+                        </p>
+
+                        <p>
+                            <strong>E-mail:</strong>
+                            <a href="mailto:info@napelemeromu-uzemeltetes.hu">
+                                info@napelemeromu-uzemeltetes.hu
+                            </a>
+                        </p>
+
+                        <p>
+                            <strong>Telefon:</strong>
+                            <a href="tel:+36300113200">
+                                +36 30 011 3200
+                            </a>
+                        </p>
+                    </section>
+
+                    <!-- 2. KEZELT ADATOK -->
+                    <section class="legal-card">
+                        <h2>2. Milyen adatokat kezelhetünk?</h2>
+
+                        <h3>2.1. E-mailes kapcsolatfelvétel</h3>
+
+                        <p>
+                            Ha e-mailben keresed meg az üzemeltetőt,
+                            az e-mail elküldésével és megérkezésével
+                            összefüggésben kezelhető lehet különösen
+                            a neved, e-mail-címed, az üzeneted tartalma,
+                            valamint a levelezés technikai adatai.
+                        </p>
+
+                        <p>
+                            Az adatok köre attól függ, milyen
+                            információkat adsz meg az üzenetedben.
+                        </p>
+
+                        <h3>2.2. Telefonos kapcsolatfelvétel</h3>
+
+                        <p>
+                            Telefonos megkeresés esetén a kapcsolat
+                            kezeléséhez szükséges, általad megadott
+                            információk – például a neved, telefonszámod
+                            és a megkeresésed tárgya – kezelése merülhet fel.
+                        </p>
+
+                        <p>
+                            Telefonbeszélgetések rögzítéséről a jelen
+                            tájékoztató nem állít semmit; ilyen adatkezelés
+                            csak akkor szerepelhet a végleges változatban,
+                            ha ténylegesen történik.
+                        </p>
+
+                        <h3>2.3. A weboldal technikai használata</h3>
+
+                        <p>
+                            A weboldal kiszolgálása során a tárhely
+                            és a szerver működésétől függően technikai
+                            adatok, például IP-cím, hozzáférési időpont,
+                            böngészőadatok és szervernaplók keletkezhetnek.
+                        </p>
+
+                        <p>
+                            A pontosan kezelt adatok, a megőrzési idők
+                            és az adatkezelés jogalapja a tárhelyszolgáltató
+                            és a tényleges technikai beállítások
+                            ismeretében véglegesítendők.
+                        </p>
+                    </section>
+
+                    <!-- 3. CÉLOK ÉS JOGALAPOK -->
+                    <section class="legal-card">
+                        <h2>3. Az adatkezelés célja és jogalapja</h2>
+
+                        <p>
+                            Az e-mailes és telefonos kapcsolatfelvételhez
+                            kapcsolódó adatkezelés célja a megkeresések
+                            megválaszolása, az érdeklődések kezelése,
+                            valamint az esetleges szolgáltatási igények
+                            egyeztetése.
+                        </p>
+
+                        <p>
+                            A konkrét jogalap az adott megkeresés
+                            körülményeitől függhet. Szerződéskötést
+                            megelőző lépések esetén a GDPR 6. cikk
+                            (1) bekezdés b) pontja, más esetekben
+                            megfelelően dokumentált jogos érdek vagy
+                            más alkalmazandó jogalap jöhet szóba.
+                        </p>
+
+                        <p>
+                            A jogalapot minden tényleges adatkezelési
+                            célhoz külön kell meghatározni; ez a
+                            tájékoztató önmagában nem jelent
+                            hozzájárulás-kérést.
+                        </p>
+                    </section>
+
+                    <!-- 4. MEGŐRZÉSI IDŐ -->
+                    <section class="legal-card">
+                        <h2>4. Mennyi ideig őrizzük meg az adatokat?</h2>
+
+                        <p>
+                            A megőrzési idő az adatkezelés céljától,
+                            a kapcsolat jellegétől, az esetleges
+                            szerződéses kötelezettségektől és a
+                            jogszabályi előírásoktól függ.
+                        </p>
+
+                        <p>
+                            A megkeresésekhez kapcsolódó levelezés
+                            megőrzési idejét az adatkezelőnek a
+                            tényleges működés alapján kell meghatároznia.
+                            A könyvelési vagy más jogszabályi
+                            kötelezettség alá tartozó dokumentumokra
+                            külön megőrzési szabályok vonatkozhatnak.
+                        </p>
+                    </section>
+
+                    <!-- 5. ADATTOVÁBBÍTÁS -->
+                    <section class="legal-card">
+                        <h2>5. Kik férhetnek hozzá az adatokhoz?</h2>
+
+                        <p>
+                            A személyes adatokhoz az adatkezelő,
+                            illetve a feladat ellátásához szükséges
+                            mértékben az általa igénybe vett
+                            szolgáltatók férhetnek hozzá.
+                        </p>
+
+                        <p>
+                            A tényleges tárhelyszolgáltatót, e-mail-
+                            szolgáltatót és az esetlegesen használt
+                            egyéb adatfeldolgozókat a szolgáltatások
+                            kiválasztását követően pontosítani kell.
+                        </p>
+
+                        <p>
+                            Személyes adatot harmadik fél részére
+                            kizárólag megfelelő jogalappal, a szükséges
+                            mértékben és az alkalmazandó jogszabályok
+                            betartásával lehet továbbítani.
+                        </p>
+                    </section>
+
+                    <!-- 6. SÜTIK -->
+                    <section class="legal-card">
+                        <h2>6. Sütik és külső szolgáltatások</h2>
+
+                        <p>
+                            A weboldal jelenlegi forráskódjából nem
+                            állapítható meg teljes bizonyossággal,
+                            hogy a közzétett változat használ-e
+                            analitikai, hirdetési vagy más, nem
+                            feltétlenül szükséges sütiket.
+                        </p>
+
+                        <p>
+                            A weboldal élesítése előtt ellenőrizni
+                            kell a sütiket, a külső beágyazásokat,
+                            valamint az esetleges látogatottságmérő
+                            és marketingeszközöket. Ha ilyen
+                            adatkezelés történik, annak célját,
+                            jogalapját, időtartamát és a felhasználói
+                            választási lehetőségeket külön ismertetni kell.
+                        </p>
+                    </section>
+
+                    <!-- 7. ÉRINTETTI JOGOK -->
+                    <section class="legal-card">
+                        <h2>7. Milyen jogok illetnek meg?</h2>
+
+                        <p>
+                            A GDPR feltételei szerint az érintett
+                            jogosult lehet különösen:
+                        </p>
+
+                        <ul>
+                            <li>tájékoztatást kérni a személyes adatai kezeléséről;</li>
+                            <li>hozzáférést kérni a kezelt adataihoz;</li>
+                            <li>kérni a pontatlan adatok helyesbítését;</li>
+                            <li>kérni az adatok törlését, ha annak feltételei fennállnak;</li>
+                            <li>kérni az adatkezelés korlátozását;</li>
+                            <li>tiltakozni a jogos érdeken alapuló adatkezelés ellen, ha ennek feltételei fennállnak;</li>
+                            <li>az alkalmazandó feltételek mellett adathordozhatóságot kérni;</li>
+                            <li>panaszt tenni a felügyeleti hatóságnál.</li>
+                        </ul>
+
+                        <p>
+                            A kérelmeket az adatkezelő elérhetőségein
+                            lehet benyújtani. A kérelmek elbírálása
+                            a vonatkozó jogszabályok szerint történik.
+                        </p>
+                    </section>
+
+                    <!-- 8. PANASZ -->
+                    <section class="legal-card">
+                        <h2>8. Jogorvoslati lehetőségek</h2>
+
+                        <p>
+                            Ha úgy véled, hogy a személyes adataid
+                            kezelése sérti a vonatkozó adatvédelmi
+                            szabályokat, először az adatkezelővel
+                            veheted fel a kapcsolatot.
+                        </p>
+
+                        <p>
+                            Panasz a Nemzeti Adatvédelmi és
+                            Információszabadság Hatóságnál is
+                            benyújtható.
+                        </p>
+
+                        <p>
+                            <strong>Hatóság:</strong>
+                            Nemzeti Adatvédelmi és Információszabadság Hatóság (NAIH)
+                        </p>
+
+                        <p>
+                            <strong>Cím:</strong>
+                            1055 Budapest, Falk Miksa utca 9–11.
+                        </p>
+
+                        <p>
+                            <strong>Weboldal:</strong>
+                            <a
+                                href="https://www.naih.hu/"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                            >
+                                www.naih.hu
+                            </a>
+                        </p>
+                    </section>
+
+                    <!-- 9. MÓDOSÍTÁS -->
+                    <section class="legal-card">
+                        <h2>9. A tájékoztató módosítása</h2>
+
+                        <p>
+                            Az adatkezelési tájékoztatót felül kell
+                            vizsgálni, ha megváltozik a weboldal
+                            működése, új szolgáltatás vagy technológia
+                            kerül bevezetésre, illetve ha a vonatkozó
+                            jogszabályok ezt indokolják.
+                        </p>
+                    </section>
+
+                    <div class="legal-notice">
+                        <strong>Fejlesztési megjegyzés:</strong>
+                        Ez a dokumentum előzetes tervezet, nem végleges,
+                        jogilag ellenőrzött adatkezelési tájékoztató.
+                        Közzététel előtt pontosítani kell a tárhelyet,
+                        az e-mail-szolgáltatót, a szervernaplózást,
+                        a sütiket, a tényleges megőrzési időket,
+                        az adatkezelési jogalapokat és az esetleges
+                        további adatfeldolgozókat. A szögletes
+                        zárójelekben vagy általánosan megjelölt
+                        hiányzó adatok nem maradhatnak tisztázatlanok.
+                    </div>
+
+                    <a href="index.html" class="legal-back">
+                        ← Vissza a főoldalra
+                    </a>
+
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- LÁBLÉC -->
+    <footer class="footer">
+        <div class="section-container">
+
+            <div class="footer-grid">
+
+                <div class="footer-brand">
+                    <a href="index.html" class="footer-logo">
+                        NAPERŐMŰ<br>
+                        ÜZEMELTETÉS
+                    </a>
+
+                    <p>
+                        Ipari naperőművek villamos üzemeltetése
+                        és karbantartása.
+                    </p>
+                </div>
+
+                <div class="footer-column">
+                    <h4>Navigáció</h4>
+                    <a href="index.html#rolunk">Rólunk</a>
+                    <a href="index.html#szolgaltatasok">Szolgáltatások</a>
+                    <a href="index.html#referenciak">Referenciák</a>
+                    <a href="index.html#kapcsolat">Kapcsolat</a>
+                </div>
+
+                <div class="footer-column">
+                    <h4>Kapcsolat</h4>
+                    <a href="mailto:info@napelemeromu-uzemeltetes.hu">
+                        info@napelemeromu-uzemeltetes.hu
+                    </a>
+                    <a href="tel:+36300113200">
+                        +36 30 011 3200
+                    </a>
+                </div>
+
+                <div class="footer-column">
+                    <h4>Jogi információk</h4>
+                    <a href="impresszum.html">Impresszum</a>
+                    <a href="adatkezeles.html">
+                        Adatkezelési tájékoztató
+                    </a>
+                </div>
+
+            </div>
+
+            <div class="footer-bottom">
+                <span>
+                    © <span id="footerYear"></span>
+                    Naperőmű Üzemeltetés
+                </span>
+                <span>Minden jog fenntartva.</span>
+            </div>
+
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+
+    <script>
+        document.getElementById("footerYear").textContent =
+            new Date().getFullYear();
+    </script>
+
+</body>
+</html>

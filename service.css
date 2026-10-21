@@ -1,0 +1,1110 @@
+/* =========================
+   SERVICE HERO
+========================= */
+
+.service-hero {
+    min-height: 75vh;
+    position: relative;
+
+    display: flex;
+    align-items: center;
+
+    background:
+        url("images/hero.jpg")
+        center / cover;
+}
+
+.service-hero-overlay {
+    position: absolute;
+    inset: 0;
+
+    background:
+        linear-gradient(
+            90deg,
+            rgba(0,0,0,0.9),
+            rgba(0,0,0,0.55),
+            rgba(0,0,0,0.3)
+        );
+}
+
+.service-hero-content {
+    position: relative;
+    z-index: 2;
+
+    width: min(1000px, 90%);
+
+    margin: 80px auto 0;
+}
+
+.back-link {
+    display: inline-block;
+
+    margin-bottom: 45px;
+
+    color: #999;
+
+    font-size: 13px;
+
+    transition: 0.25s;
+}
+
+.back-link:hover {
+    color: #ff9d00;
+}
+
+.service-label {
+    display: block;
+
+    margin-bottom: 20px;
+
+    color: #ff9d00;
+
+    font-size: 13px;
+    font-weight: 700;
+
+    letter-spacing: 3px;
+}
+
+.service-hero h1 {
+    max-width: 850px;
+
+    font-size: clamp(55px, 8vw, 100px);
+
+    line-height: 0.95;
+}
+
+.service-hero h1 span {
+    color: #ff9d00;
+}
+
+.service-hero p {
+    max-width: 700px;
+
+    margin-top: 35px;
+
+    color: #cccccc;
+
+    font-size: 18px;
+}
+
+
+/* =========================
+   INTRO
+========================= */
+
+.service-intro {
+    padding: 130px 0;
+
+    background: rgba(5,5,5,0.82);
+}
+
+.service-intro-grid {
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 90px;
+}
+
+.service-intro h2 {
+    font-size: clamp(38px, 5vw, 65px);
+
+    line-height: 1.05;
+}
+
+.service-intro h2 span {
+    color: #ff9d00;
+}
+
+.service-intro p {
+    margin-bottom: 20px;
+
+    color: #999;
+
+    font-size: 17px;
+}
+
+
+/* =========================
+   FEATURES
+========================= */
+
+.service-features {
+    padding: 130px 0;
+
+    background: rgba(3,3,3,0.88);
+}
+
+
+/* Mindkét class név működik */
+
+.feature-grid,
+.features-grid {
+    display: grid;
+
+    grid-template-columns: repeat(4, 1fr);
+
+    gap: 18px;
+
+    margin-top: 60px;
+}
+
+
+/* Fejléc a szolgáltatás blokkban */
+
+.service-section-heading {
+    margin-bottom: 0;
+}
+
+.service-section-heading h2 {
+    margin-top: 15px;
+
+    font-size: clamp(38px, 5vw, 65px);
+
+    line-height: 1.05;
+}
+
+.service-section-heading h2 span {
+    color: #ff9d00;
+}
+
+
+/* Kártyák */
+
+.feature-card {
+    min-height: 300px;
+
+    padding: 30px;
+
+    background: rgba(15,15,15,0.9);
+
+    border: 1px solid rgba(255,255,255,0.08);
+
+    transition: 0.3s ease;
+}
+
+.feature-card:hover {
+    transform: translateY(-7px);
+
+    border-color: rgba(255,157,0,0.4);
+
+    box-shadow:
+        0 15px 40px rgba(0,0,0,0.35);
+}
+
+.feature-number {
+    color: #555;
+
+    font-size: 12px;
+
+    font-weight: 700;
+}
+
+
+/* Régi oldalak ikonja */
+
+.feature-icon {
+    width: 60px;
+    height: 60px;
+
+    margin-top: 35px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: rgba(255,157,0,0.08);
+
+    border: 1px solid rgba(255,157,0,0.2);
+
+    font-size: 27px;
+}
+
+
+/*
+   Az újabb hat oldalban nincs külön feature-icon.
+   Ezért automatikusan létrehozunk egyet,
+   hogy ugyanúgy nézzen ki.
+*/
+
+.features-grid .feature-card::before {
+    width: 60px;
+    height: 60px;
+
+    margin-top: 35px;
+    margin-bottom: 25px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: rgba(255,157,0,0.08);
+
+    border: 1px solid rgba(255,157,0,0.2);
+
+    font-size: 27px;
+
+    box-sizing: border-box;
+}
+
+
+/* Ikonok */
+
+.features-grid .feature-card:nth-child(1)::before {
+    content: "🔧";
+}
+
+.features-grid .feature-card:nth-child(2)::before {
+    content: "⚡";
+}
+
+.features-grid .feature-card:nth-child(3)::before {
+    content: "🛠️";
+}
+
+.features-grid .feature-card:nth-child(4)::before {
+    content: "📋";
+}
+
+
+/* Címek */
+
+.feature-card h3 {
+    margin-top: 25px;
+
+    font-size: 19px;
+}
+
+.features-grid .feature-card h3 {
+    margin-top: 0;
+}
+
+.feature-card p {
+    margin-top: 12px;
+
+    color: #888;
+
+    font-size: 13px;
+}
+
+
+/* =========================
+   PROCESS
+========================= */
+
+.service-process {
+    padding: 140px 0;
+
+    background: rgba(8,8,8,0.84);
+}
+
+
+/* Mindkét class név működik */
+
+.process-grid,
+.service-process-grid {
+    display: grid;
+
+    grid-template-columns: 0.9fr 1.1fr;
+
+    gap: 100px;
+}
+
+.process-grid h2,
+.service-process-grid h2 {
+    font-size: clamp(40px,5vw,65px);
+
+    line-height: 1.05;
+}
+
+.process-grid h2 span,
+.service-process-grid h2 span {
+    color: #ff9d00;
+}
+
+.process-grid > div > p,
+.service-process-grid > div > p {
+    max-width: 500px;
+
+    margin-top: 25px;
+
+    color: #999;
+}
+
+
+/* Process lista */
+
+.process-list {
+    border-top: 1px solid rgba(255,255,255,0.1);
+}
+
+.process-item {
+    display: grid;
+
+    grid-template-columns: 60px 1fr;
+
+    gap: 25px;
+
+    padding: 30px 0;
+
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+}
+
+.process-item > span {
+    color: #ff9d00;
+
+    font-size: 13px;
+
+    font-weight: 700;
+}
+
+.process-item h3 {
+    font-size: 20px;
+}
+
+.process-item p {
+    margin-top: 7px;
+
+    color: #777;
+
+    font-size: 14px;
+}
+
+
+/* =========================
+   CTA
+========================= */
+
+.service-cta {
+    min-height: 550px;
+
+    position: relative;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    text-align: center;
+
+    background:
+        url("images/hero.jpg")
+        center / cover;
+}
+
+.service-cta-overlay {
+    position: absolute;
+    inset: 0;
+
+    background: rgba(0,0,0,0.78);
+}
+
+.service-cta-content {
+    position: relative;
+
+    z-index: 2;
+
+    width: min(800px,90%);
+}
+
+.service-cta-content h2 {
+    font-size: clamp(40px,5vw,65px);
+
+    line-height: 1.05;
+}
+
+.service-cta-content h2 span {
+    color: #ff9d00;
+}
+
+.service-cta-content p {
+    max-width: 600px;
+
+    margin: 25px auto 35px;
+
+    color: #aaa;
+}
+
+
+/* =========================
+   MOBIL
+========================= */
+
+@media (max-width: 1000px) {
+
+    .feature-grid,
+    .features-grid {
+        grid-template-columns: repeat(2,1fr);
+    }
+
+    .service-intro-grid,
+    .process-grid,
+    .service-process-grid {
+        grid-template-columns: 1fr;
+
+        gap: 60px;
+    }
+
+}
+
+
+@media (max-width: 700px) {
+
+    .service-hero {
+        min-height: 80vh;
+    }
+
+    .service-hero h1 {
+        font-size: 52px;
+    }
+
+    .service-hero p {
+        font-size: 16px;
+    }
+
+    .feature-grid,
+    .features-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .service-intro,
+    .service-features,
+    .service-process {
+        padding: 90px 0;
+    }
+
+}
+/* =========================================
+   HŐKAMERÁS KÉP-ÖSSZEHASONLÍTÁS
+========================================= */
+
+.thermal-example {
+    max-width: 1200px;
+    margin: 100px auto;
+    padding: 0 24px;
+}
+
+.thermal-example-header {
+    max-width: 900px;
+    margin: 0 auto 55px;
+    text-align: center;
+}
+
+.thermal-label {
+    display: inline-block;
+    margin-bottom: 18px;
+    color: #f5a400;
+    font-size: 14px;
+    font-weight: 800;
+    letter-spacing: 3px;
+}
+
+.thermal-example-header h2 {
+    margin: 0;
+    color: #fff;
+    font-size: clamp(38px, 5vw, 62px);
+    line-height: 1.05;
+    font-weight: 800;
+}
+
+.thermal-example-header h2 span {
+    color: #f5a400;
+}
+
+.thermal-example-header p {
+    margin: 25px auto 0;
+    color: rgba(255,255,255,0.68);
+    font-size: 18px;
+    line-height: 1.7;
+}
+
+.thermal-comparison {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 28px;
+}
+
+.thermal-card {
+    overflow: hidden;
+    background: rgba(15,15,15,0.9);
+    border: 1px solid rgba(255,255,255,0.1);
+    border-radius: 16px;
+}
+
+.thermal-card-highlight {
+    border-color: rgba(245,164,0,0.35);
+}
+
+.thermal-image {
+    width: 100%;
+    aspect-ratio: 16 / 10;
+    overflow: hidden;
+}
+
+.thermal-image img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+}
+
+.thermal-card-content {
+    padding: 28px 30px 32px;
+}
+
+.thermal-card-title {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    margin-bottom: 15px;
+}
+
+.thermal-card-title h3 {
+    margin: 0;
+    color: #fff;
+    font-size: 24px;
+    font-weight: 800;
+}
+
+.thermal-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+    background: rgba(245,164,0,0.14);
+    color: #f5a400;
+    font-size: 20px;
+}
+
+.thermal-card-content p {
+    margin: 0;
+    color: rgba(255,255,255,0.65);
+    font-size: 16px;
+    line-height: 1.75;
+}
+
+
+/* MOBIL */
+
+@media (max-width: 800px) {
+
+    .thermal-example {
+        margin: 70px auto;
+        padding: 0 18px;
+    }
+
+    .thermal-example-header h2 {
+        font-size: 36px;
+    }
+
+    .thermal-example-header p {
+        font-size: 16px;
+    }
+
+    .thermal-comparison {
+        grid-template-columns: 1fr;
+    }
+
+    .thermal-card-content {
+        padding: 22px;
+    }
+
+    .thermal-card-title h3 {
+        font-size: 21px;
+    }
+
+    .thermal-card-content p {
+        font-size: 15px;
+    }
+
+}
+/* =========================================
+   VILLAMOS O&M - VALÓS ESET
+========================================= */
+
+.om-case-study {
+    padding: 110px 0;
+    background: rgba(8, 8, 8, 0.55);
+}
+
+.om-case-header {
+    max-width: 900px;
+    margin: 0 auto 60px;
+    text-align: center;
+}
+
+.om-case-header h2 {
+    margin: 18px 0 24px;
+    color: #fff;
+    font-size: clamp(38px, 5vw, 62px);
+    line-height: 1.05;
+    font-weight: 800;
+}
+
+.om-case-header h2 span {
+    color: #f5a400;
+}
+
+.om-case-header p {
+    max-width: 800px;
+    margin: 0 auto;
+    color: rgba(255, 255, 255, 0.67);
+    font-size: 17px;
+    line-height: 1.75;
+}
+
+
+/* =========================================
+   KÉP + SZÖVEG
+========================================= */
+
+.om-case-grid {
+    display: grid;
+    grid-template-columns: 1.15fr 0.85fr;
+    gap: 50px;
+    align-items: center;
+}
+
+
+/* KÉP */
+
+.om-case-image {
+    position: relative;
+    overflow: hidden;
+    border-radius: 18px;
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    background: #111;
+    box-shadow: 0 25px 70px rgba(0, 0, 0, 0.45);
+}
+
+.om-case-image img {
+    width: 100%;
+    height: 560px;
+    display: block;
+    object-fit: cover;
+}
+
+.om-case-image-label {
+    position: absolute;
+    left: 20px;
+    bottom: 20px;
+
+    padding: 10px 16px;
+
+    background: rgba(0, 0, 0, 0.78);
+    border-left: 3px solid #f5a400;
+
+    color: #fff;
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+
+    backdrop-filter: blur(8px);
+}
+
+
+/* SZÖVEG */
+
+.om-case-content {
+    padding: 15px 0;
+}
+
+.om-case-number {
+    display: inline-block;
+    margin-bottom: 18px;
+
+    color: #f5a400;
+    font-size: 13px;
+    font-weight: 800;
+    letter-spacing: 3px;
+}
+
+.om-case-content h3 {
+    margin: 0 0 25px;
+
+    color: #fff;
+    font-size: clamp(30px, 3vw, 45px);
+    line-height: 1.12;
+    font-weight: 800;
+}
+
+.om-case-content h3 span {
+    color: #f5a400;
+}
+
+.om-case-content p {
+    margin: 0 0 20px;
+
+    color: rgba(255, 255, 255, 0.67);
+    font-size: 16px;
+    line-height: 1.75;
+}
+
+
+/* KIEMELT ÜZENET */
+
+.om-case-warning {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+    margin-top: 30px;
+    padding: 24px;
+
+    background: rgba(245, 164, 0, 0.07);
+
+    border-left: 3px solid #f5a400;
+    border-radius: 0 10px 10px 0;
+}
+
+.om-case-warning strong {
+    color: #f5a400;
+    font-size: 17px;
+}
+
+.om-case-warning span {
+    color: rgba(255, 255, 255, 0.65);
+    font-size: 15px;
+    line-height: 1.65;
+}
+
+
+/* =========================================
+   MOBIL
+========================================= */
+
+@media (max-width: 850px) {
+
+    .om-case-study {
+        padding: 75px 0;
+    }
+
+    .om-case-header {
+        margin-bottom: 40px;
+    }
+
+    .om-case-header h2 {
+        font-size: 36px;
+    }
+
+    .om-case-header p {
+        font-size: 15px;
+    }
+
+    .om-case-grid {
+        grid-template-columns: 1fr;
+        gap: 35px;
+    }
+
+    .om-case-image img {
+        height: auto;
+        aspect-ratio: 4 / 3;
+        object-fit: cover;
+    }
+
+    .om-case-content h3 {
+        font-size: 32px;
+    }
+
+}
+/* =========================================
+   VILLAMOS O&M - VALÓS ESET
+========================================= */
+
+.om-case-study {
+    padding: 110px 0;
+    background: rgba(8, 8, 8, 0.55);
+}
+
+.om-case-header {
+    max-width: 900px;
+    margin: 0 auto 60px;
+    text-align: center;
+}
+
+.om-case-header h2 {
+    margin: 18px 0 24px;
+    color: #fff;
+    font-size: clamp(38px, 5vw, 62px);
+    line-height: 1.05;
+    font-weight: 800;
+}
+
+.om-case-header h2 span {
+    color: #f5a400;
+}
+
+.om-case-header p {
+    max-width: 800px;
+    margin: 0 auto;
+    color: rgba(255,255,255,0.67);
+    font-size: 17px;
+    line-height: 1.75;
+}
+
+.om-case-grid {
+    display: grid;
+    grid-template-columns: 1.15fr 0.85fr;
+    gap: 50px;
+    align-items: center;
+}
+
+.om-case-image {
+    position: relative;
+    overflow: hidden;
+    border-radius: 18px;
+    border: 1px solid rgba(255,255,255,0.12);
+    background: #111;
+    box-shadow: 0 25px 70px rgba(0,0,0,0.45);
+}
+
+.om-case-image img {
+    width: 100%;
+    height: 560px;
+    display: block;
+    object-fit: cover;
+}
+
+.om-case-image-label {
+    position: absolute;
+    left: 20px;
+    bottom: 20px;
+    padding: 10px 16px;
+    background: rgba(0,0,0,0.78);
+    border-left: 3px solid #f5a400;
+    color: #fff;
+    font-size: 13px;
+    font-weight: 700;
+    backdrop-filter: blur(8px);
+}
+
+.om-case-content {
+    padding: 15px 0;
+}
+
+.om-case-number {
+    display: inline-block;
+    margin-bottom: 18px;
+    color: #f5a400;
+    font-size: 13px;
+    font-weight: 800;
+    letter-spacing: 3px;
+}
+
+.om-case-content h3 {
+    margin: 0 0 25px;
+    color: #fff;
+    font-size: clamp(30px, 3vw, 45px);
+    line-height: 1.12;
+    font-weight: 800;
+}
+
+.om-case-content h3 span {
+    color: #f5a400;
+}
+
+.om-case-content p {
+    margin: 0 0 20px;
+    color: rgba(255,255,255,0.67);
+    font-size: 16px;
+    line-height: 1.75;
+}
+
+.om-case-warning {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 30px;
+    padding: 24px;
+    background: rgba(245,164,0,0.07);
+    border-left: 3px solid #f5a400;
+    border-radius: 0 10px 10px 0;
+}
+
+.om-case-warning strong {
+    color: #f5a400;
+    font-size: 17px;
+}
+
+.om-case-warning span {
+    color: rgba(255,255,255,0.65);
+    font-size: 15px;
+    line-height: 1.65;
+}
+
+
+/* =========================================
+   MODULOK ÉS TARTÓSZERKEZET
+========================================= */
+
+.om-panels-section {
+    padding: 110px 0;
+}
+
+.om-panels-header {
+    max-width: 900px;
+    margin: 0 auto 60px;
+    text-align: center;
+}
+
+.om-panels-header h2 {
+    margin: 18px 0 24px;
+    color: #fff;
+    font-size: clamp(38px, 5vw, 62px);
+    line-height: 1.05;
+    font-weight: 800;
+}
+
+.om-panels-header h2 span {
+    color: #f5a400;
+}
+
+.om-panels-header p {
+    max-width: 820px;
+    margin: 0 auto;
+    color: rgba(255,255,255,0.67);
+    font-size: 17px;
+    line-height: 1.75;
+}
+
+.om-panels-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 28px;
+}
+
+.om-panel-card {
+    overflow: hidden;
+    background: rgba(15,15,15,0.9);
+    border: 1px solid rgba(255,255,255,0.1);
+    border-radius: 18px;
+    transition: transform 0.3s ease, border-color 0.3s ease;
+}
+
+.om-panel-card:hover {
+    transform: translateY(-5px);
+    border-color: rgba(245,164,0,0.45);
+}
+
+.om-panel-image {
+    width: 100%;
+    aspect-ratio: 4 / 3;
+    overflow: hidden;
+}
+
+.om-panel-image img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+}
+
+.om-panel-content {
+    padding: 28px 30px 32px;
+}
+
+.om-panel-content > span {
+    display: block;
+    margin-bottom: 12px;
+    color: #f5a400;
+    font-size: 12px;
+    font-weight: 800;
+    letter-spacing: 2px;
+}
+
+.om-panel-content h3 {
+    margin: 0 0 15px;
+    color: #fff;
+    font-size: 25px;
+    font-weight: 800;
+}
+
+.om-panel-content p {
+    margin: 0;
+    color: rgba(255,255,255,0.65);
+    font-size: 16px;
+    line-height: 1.75;
+}
+
+.om-panels-bottom {
+    max-width: 900px;
+    margin: 45px auto 0;
+    padding: 28px 32px;
+    border-left: 3px solid #f5a400;
+    background: rgba(245,164,0,0.06);
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.om-panels-bottom strong {
+    color: #f5a400;
+    font-size: 18px;
+}
+
+.om-panels-bottom span {
+    color: rgba(255,255,255,0.65);
+    font-size: 15px;
+    line-height: 1.7;
+}
+
+
+/* =========================================
+   MOBIL
+========================================= */
+
+@media (max-width: 850px) {
+
+    .om-case-study,
+    .om-panels-section {
+        padding: 75px 0;
+    }
+
+    .om-case-header,
+    .om-panels-header {
+        margin-bottom: 40px;
+    }
+
+    .om-case-header h2,
+    .om-panels-header h2 {
+        font-size: 36px;
+    }
+
+    .om-case-header p,
+    .om-panels-header p {
+        font-size: 15px;
+    }
+
+    .om-case-grid {
+        grid-template-columns: 1fr;
+        gap: 35px;
+    }
+
+    .om-case-image img {
+        height: auto;
+        aspect-ratio: 4 / 3;
+    }
+
+    .om-case-content h3 {
+        font-size: 32px;
+    }
+
+    .om-panels-grid {
+        grid-template-columns: 1fr;
+        gap: 22px;
+    }
+
+    .om-panel-content {
+        padding: 23px;
+    }
+
+    .om-panel-content h3 {
+        font-size: 22px;
+    }
+
+    .om-panels-bottom {
+        padding: 22px;
+    }
+
+}
